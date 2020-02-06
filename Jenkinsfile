@@ -15,6 +15,7 @@ pipeline {
             steps {
                     sh 'cd Selenium'
                     sh 'mvn test'
+                    sh 'cd ../ && rm -rf Selenium
             }
         }
     }
