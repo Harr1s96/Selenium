@@ -11,10 +11,6 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.support.PageFactory;
-// import org.springframework.boot.test.context.SpringBootTest;
-// import org.springframework.boot.test.context.SpringBootTest.WebEnvironment;
-// import org.springframework.boot.web.server.LocalServerPort;
-// import org.springframework.test.context.junit4.SpringRunner;
 
 import com.bae.universalapp.test.selenium.constants.Constants;
 import com.bae.universalapp.test.selenium.pages.HomePage;
@@ -47,14 +43,14 @@ public class HomePageTest {
 	@Test
 	public void postAndNaivgationTest() {
 
-		chromeDriver.get("http://" + ADDRESS + ":" + port + "/UniversalApp/");
+		chromeDriver.get("http://" + ADDRESS + ":" + port + "/");
 		homePage.submitDetails("James Kiesslinger", "Introduction to Thermodynamics", "CHEM 390");
 
 		homePage.proceedtoModules(chromeDriver);
 
 		homePage.proceedToLectures();
 
-		assertEquals("http://" + ADDRESS + ":" + port + "/UniversalApp/lecture-page.html?id=1", this.chromeDriver.getCurrentUrl());
+		assertEquals("http://" + ADDRESS + ":" + port + "/lecture-page.html?id=1", this.chromeDriver.getCurrentUrl());
 	}
 
 	// @Test
