@@ -9,7 +9,7 @@ pipeline {
         }
         stage('-- build docker image --') {
             steps {
-                sh "docker build -t back-end ."
+                sh "docker build -t selenium-test ."
             }
         }
         stage('-- deploy image to Docker Hub --') {
