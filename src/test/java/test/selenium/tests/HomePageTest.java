@@ -47,8 +47,8 @@ public class HomePageTest {
 	@Test
 	public void postAndNaivgationTest() {
 
-		chromeDriver.get("http://" + ADDRESS + ":" + port + "/UniversalApp/");
-		homePage.submitDetails("James Kiesslinger", "Introduction to Thermodynamics", "CHEM 390");
+		// chromeDriver.get("http://" + ADDRESS + ":" + port + "/UniversalApp/");
+		// homePage.submitDetails("James Kiesslinger", "Introduction to Thermodynamics", "CHEM 390");
 
 		// homePage.proceedtoModules(chromeDriver);
 
