@@ -11,7 +11,7 @@ pipeline {
                 sh "git clone https://github.com/Harr1s96/Selenium.git"
             }
         }
-        stage('-- run maven clean --') {
+        stage('-- run maven test --') {
             steps {
                     sh 'cd Selenium'
                     sh 'mvn test'
