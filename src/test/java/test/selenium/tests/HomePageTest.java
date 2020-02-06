@@ -26,7 +26,7 @@ public class HomePageTest {
 
 	private WebDriver chromeDriver;
 
-	private final String ADDRESS = "52.56.90.200";
+	private final String ADDRESS = "35.178.186.230";
 
 	private HomePage homePage;
 
