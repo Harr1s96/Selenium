@@ -47,14 +47,14 @@ public class HomePageTest {
 	@Test
 	public void postAndNaivgationTest() {
 
-		// chromeDriver.get("http://" + ADDRESS + ":" + port + "/UniversalApp/");
-		// homePage.submitDetails("James Kiesslinger", "Introduction to Thermodynamics", "CHEM 390");
+		chromeDriver.get("http://" + ADDRESS + ":" + port + "/UniversalApp/");
+		homePage.submitDetails("James Kiesslinger", "Introduction to Thermodynamics", "CHEM 390");
 
-		// homePage.proceedtoModules(chromeDriver);
+		homePage.proceedtoModules(chromeDriver);
 
-		// homePage.proceedToLectures();
+		homePage.proceedToLectures();
 
-		// assertEquals("http://" + ADDRESS + ":" + port + "/UniversalApp/lecture-page.html?id=1", this.chromeDriver.getCurrentUrl());
+		assertEquals("http://" + ADDRESS + ":" + port + "/UniversalApp/lecture-page.html?id=1", this.chromeDriver.getCurrentUrl());
 	}
 
 	// @Test
