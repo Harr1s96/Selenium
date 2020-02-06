@@ -23,7 +23,6 @@ import com.bae.universalapp.test.selenium.pages.HomePage;
  * MainPageTest
  */
 @RunWith(SpringRunner.class)
-@SpringBootTest(webEnvironment = WebEnvironment.RANDOM_PORT)
 public class HomePageTest {
 
 	private WebDriver chromeDriver;
