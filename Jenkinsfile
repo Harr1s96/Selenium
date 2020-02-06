@@ -6,17 +6,15 @@ pipeline {
                 sh "mvn clean package"
             }
         }
-        stage('-- build docker image --') {
+        stage('-- clone test repository --') {
             steps {
-                sh "docker build -t selenium-test ."
+                sh "git clone https://github.com/Harr1s96/Selenium.git"
             }
         }
-        stage('-- deploy image to Docker Hub --') {
+        stage('-- run maven clean --') {
             steps {
-                withDockerRegistry([credentialsId: "docker-credentials", url: ""]) {
-                    sh 'docker tag selenium-test bigheck123/selenium-test'
-                    sh 'docker push bigheck123/selenium-test'
-                }
+                    sh 'cd Selenium'
+                    sh 'mvn test'
             }
         }
     }
