@@ -16,7 +16,6 @@ pipeline {
                     sh 'cd Selenium'
                     sh 'mvn test'
                     sh 'rm -rf /home/jenkins/.jenkins/workspace/selenium-pipeline/Selenium'
-'
             }
         }
     }
