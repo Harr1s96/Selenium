@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('--- package and deploy to Nexus ---') {
             steps {
-                sh "mvn clean package deploy"
+                sh "mvn clean package"
             }
         }
         stage('-- build docker image --') {
