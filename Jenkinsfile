@@ -1,7 +1,6 @@
 pipeline {
     agent any
     stages {
-        stage()
         stage('--- package and deploy to Nexus ---') {
             steps {
                 sh "mvn clean package deploy"
@@ -9,7 +8,7 @@ pipeline {
         }
         stage('-- build docker image --') {
             steps {
-                sh "docker build -t back-end ."
+                sh "docker build -t selenium-test ."
             }
         }
         stage('-- deploy image to Docker Hub --') {
