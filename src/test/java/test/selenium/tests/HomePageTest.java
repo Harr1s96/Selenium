@@ -6,15 +6,15 @@ import java.util.concurrent.TimeUnit;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
-import org.junit.runner.RunWith;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.chrome.ChromeOptions;
-import org.openqa.selenium.support.PageFactory;
-import org.springframework.boot.test.context.SpringBootTest;
-import org.springframework.boot.test.context.SpringBootTest.WebEnvironment;
-import org.springframework.boot.web.server.LocalServerPort;
-import org.springframework.test.context.junit4.SpringRunner;
+// import org.junit.runner.RunWith;
+// import org.openqa.selenium.WebDriver;
+// import org.openqa.selenium.chrome.ChromeDriver;
+// import org.openqa.selenium.chrome.ChromeOptions;
+// import org.openqa.selenium.support.PageFactory;
+// import org.springframework.boot.test.context.SpringBootTest;
+// import org.springframework.boot.test.context.SpringBootTest.WebEnvironment;
+// import org.springframework.boot.web.server.LocalServerPort;
+// import org.springframework.test.context.junit4.SpringRunner;
 
 import com.bae.universalapp.test.selenium.constants.Constants;
 import com.bae.universalapp.test.selenium.pages.HomePage;
@@ -22,7 +22,6 @@ import com.bae.universalapp.test.selenium.pages.HomePage;
 /**
  * MainPageTest
  */
-@RunWith(SpringRunner.class)
 public class HomePageTest {
 
 	private WebDriver chromeDriver;
@@ -31,8 +30,7 @@ public class HomePageTest {
 
 	private HomePage homePage;
 
-	@LocalServerPort
-	private int port;
+	private int port = 9091;
 
 	@Before
 	public void setup() {
